@@ -6,10 +6,10 @@
                 <h3 class="text-gray-200 text-2xl">Carreiras na Spiral</h3>
                 <hr class="bg-gray-200 mb-5">
                 <p class="text-gray-200 text-lg">
-                    Destacamos pessoas que vão além, <b>originais, apaixonadas, proativas, comunicativas e flexíveis</b>. Pessoas com perfil <b>analítico,
+                    Destacamos pessoas que vão além, <b class="text-white">originais, apaixonadas, proativas, comunicativas e flexíveis</b>. Pessoas com perfil <b class="text-white">analítico,
                     desafiador, investigativo, e crítico, boa capacidade de relacionamento, perfil hands on, versátil e muita vontade de fazer
-                    acontecer</b>. Interesse em sistemas, tecnologias, novidades do <b>ambiente digital e ferramentas ágeis</b>.<br><br>
-                    Se você gosta de <b>trabalhar em equipe</b> e possui <b>inciativas para resolver problemas</b>, com certeza é a pessoa ideal para ser <span class="font-bold text-green-500">SPIRAL</span>.
+                    acontecer</b>. Interesse em sistemas, tecnologias, novidades do <b class="text-white">ambiente digital e ferramentas ágeis</b>.<br><br>
+                    Se você gosta de <b class="text-white">trabalhar em equipe</b> e possui <b class="text-white">inciativas para resolver problemas</b>, com certeza é a pessoa ideal para ser <span class="font-bold text-green-500">SPIRAL</span>.
                 </p>
             </div>
         </div>
@@ -113,15 +113,18 @@
                 </div>
             </div>
         </div>
+        <footer-vagas></footer-vagas>
     </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import HeaderVagas from './HeaderVagas'
+import FooterVagas from './FooterVagas'
 export default {
     components: {
         'header-vagas': HeaderVagas,
+        'footer-vagas': FooterVagas,
     },
     data() {
         return {

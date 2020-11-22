@@ -14,6 +14,7 @@ Vue.use(InertiaForm);
 Vue.use(PortalVue);
 
 Vue.component('header-vagas', require('./Pages/HeaderVagas.vue').default);
+Vue.component('footer-vagas', require('./Pages/FooterVagas.vue').default);
 
 const app = document.getElementById('app');
 

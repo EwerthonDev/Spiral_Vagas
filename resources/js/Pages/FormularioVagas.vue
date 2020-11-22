@@ -43,20 +43,27 @@
                     <options></options>
                 </select>
                     <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Descrição da vaga</label><br>
-                    <textarea class="bg-gray-300 w-full rounded" style="min-height:150px;"/>
+                    <textarea class="bg-gray-300 w-full rounded p-1" style="min-height:150px;"/>
+                <div class="flex flex-row-reverse items-center mt-7">
+                    <button type="submit" class="rounded-3xl p-3 shadow-xl bg-green-500 text-xl font-bold">Cadastrar</button>
+                    <a class="text-gray-300 font-bold text-xl mr-6" href="/vagas">Cancelar</a>
+                </div>
             </form>
           </div>
       </div>
+      <footer-vagas></footer-vagas>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import HeaderVagas from './HeaderVagas'
+import FooterVagas from './FooterVagas'
 
 export default {
     components: {
         'header-vagas': HeaderVagas,
+        'footer-vagas': FooterVagas
     },
     data() {
         return {

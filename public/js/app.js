@@ -3397,6 +3397,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/FooterVagas.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/FooterVagas.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/FormularioVagas.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/FormularioVagas.vue?vue&type=script&lang=js& ***!
@@ -3409,6 +3430,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _HeaderVagas__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderVagas */ "./resources/js/Pages/HeaderVagas.vue");
+/* harmony import */ var _FooterVagas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FooterVagas */ "./resources/js/Pages/FooterVagas.vue");
 //
 //
 //
@@ -3461,11 +3483,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    'header-vagas': _HeaderVagas__WEBPACK_IMPORTED_MODULE_1__["default"]
+    'header-vagas': _HeaderVagas__WEBPACK_IMPORTED_MODULE_1__["default"],
+    'footer-vagas': _FooterVagas__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
@@ -4312,6 +4341,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _HeaderVagas__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderVagas */ "./resources/js/Pages/HeaderVagas.vue");
+/* harmony import */ var _FooterVagas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FooterVagas */ "./resources/js/Pages/FooterVagas.vue");
 //
 //
 //
@@ -4430,11 +4460,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    'header-vagas': _HeaderVagas__WEBPACK_IMPORTED_MODULE_1__["default"]
+    'header-vagas': _HeaderVagas__WEBPACK_IMPORTED_MODULE_1__["default"],
+    'footer-vagas': _FooterVagas__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
@@ -47559,6 +47592,53 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/FooterVagas.vue?vue&type=template&id=d565f24c&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/FooterVagas.vue?vue&type=template&id=d565f24c& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg-gray-900" }, [
+      _c(
+        "div",
+        {
+          staticClass: "container mx-auto p-4 grid justify-items-center",
+          staticStyle: { "min-height": "70px" }
+        },
+        [
+          _c("span", { staticClass: "text-gray-200 text-lg mt-1" }, [
+            _vm._v("Desenvolvido por "),
+            _c("b", { staticClass: " text-green-500 font-bold text-xl" }, [
+              _vm._v("Spiral")
+            ])
+          ])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/FormularioVagas.vue?vue&type=template&id=d71b6e3a&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/FormularioVagas.vue?vue&type=template&id=d71b6e3a& ***!
@@ -47658,14 +47738,18 @@ var render = function() {
                 _c("br"),
                 _vm._v(" "),
                 _c("textarea", {
-                  staticClass: "bg-gray-300 w-full rounded",
+                  staticClass: "bg-gray-300 w-full rounded p-1",
                   staticStyle: { "min-height": "150px" }
-                })
+                }),
+                _vm._v(" "),
+                _vm._m(9)
               ]
             )
           ]
         )
-      ])
+      ]),
+      _vm._v(" "),
+      _c("footer-vagas")
     ],
     1
   )
@@ -47787,6 +47871,35 @@ var staticRenderFns = [
       _c("b", { staticClass: "text-red-600" }, [_vm._v("* ")]),
       _vm._v("Descrição da vaga")
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "flex flex-row-reverse items-center mt-7" },
+      [
+        _c(
+          "button",
+          {
+            staticClass:
+              "rounded-3xl p-3 shadow-xl bg-green-500 text-xl font-bold",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("Cadastrar")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "text-gray-300 font-bold text-xl mr-6",
+            attrs: { href: "/vagas" }
+          },
+          [_vm._v("Cancelar")]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -49363,7 +49476,9 @@ var render = function() {
             ]
           )
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _c("footer-vagas")
     ],
     1
   )
@@ -49386,26 +49501,32 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "text-gray-200 text-lg" }, [
             _vm._v("\n                Destacamos pessoas que vão além, "),
-            _c("b", [
+            _c("b", { staticClass: "text-white" }, [
               _vm._v(
                 "originais, apaixonadas, proativas, comunicativas e flexíveis"
               )
             ]),
             _vm._v(". Pessoas com perfil "),
-            _c("b", [
+            _c("b", { staticClass: "text-white" }, [
               _vm._v(
                 "analítico,\n                desafiador, investigativo, e crítico, boa capacidade de relacionamento, perfil hands on, versátil e muita vontade de fazer\n                acontecer"
               )
             ]),
             _vm._v(". Interesse em sistemas, tecnologias, novidades do "),
-            _c("b", [_vm._v("ambiente digital e ferramentas ágeis")]),
+            _c("b", { staticClass: "text-white" }, [
+              _vm._v("ambiente digital e ferramentas ágeis")
+            ]),
             _vm._v("."),
             _c("br"),
             _c("br"),
             _vm._v("\n                Se você gosta de "),
-            _c("b", [_vm._v("trabalhar em equipe")]),
+            _c("b", { staticClass: "text-white" }, [
+              _vm._v("trabalhar em equipe")
+            ]),
             _vm._v(" e possui "),
-            _c("b", [_vm._v("inciativas para resolver problemas")]),
+            _c("b", { staticClass: "text-white" }, [
+              _vm._v("inciativas para resolver problemas")
+            ]),
             _vm._v(", com certeza é a pessoa ideal para ser "),
             _c("span", { staticClass: "font-bold text-green-500" }, [
               _vm._v("SPIRAL")
@@ -63379,6 +63500,8 @@ var map = {
 	"./API/Index.vue": "./resources/js/Pages/API/Index.vue",
 	"./Dashboard": "./resources/js/Pages/Dashboard.vue",
 	"./Dashboard.vue": "./resources/js/Pages/Dashboard.vue",
+	"./FooterVagas": "./resources/js/Pages/FooterVagas.vue",
+	"./FooterVagas.vue": "./resources/js/Pages/FooterVagas.vue",
 	"./FormularioVagas": "./resources/js/Pages/FormularioVagas.vue",
 	"./FormularioVagas.vue": "./resources/js/Pages/FormularioVagas.vue",
 	"./HeaderVagas": "./resources/js/Pages/HeaderVagas.vue",
@@ -63623,6 +63746,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_097ba13b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Dashboard_vue_vue_type_template_id_097ba13b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterVagas.vue":
+/*!********************************************!*\
+  !*** ./resources/js/Pages/FooterVagas.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FooterVagas_vue_vue_type_template_id_d565f24c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FooterVagas.vue?vue&type=template&id=d565f24c& */ "./resources/js/Pages/FooterVagas.vue?vue&type=template&id=d565f24c&");
+/* harmony import */ var _FooterVagas_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FooterVagas.vue?vue&type=script&lang=js& */ "./resources/js/Pages/FooterVagas.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _FooterVagas_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FooterVagas_vue_vue_type_template_id_d565f24c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FooterVagas_vue_vue_type_template_id_d565f24c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/FooterVagas.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterVagas.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/Pages/FooterVagas.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterVagas_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterVagas.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/FooterVagas.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterVagas_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/FooterVagas.vue?vue&type=template&id=d565f24c&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/Pages/FooterVagas.vue?vue&type=template&id=d565f24c& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterVagas_vue_vue_type_template_id_d565f24c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterVagas.vue?vue&type=template&id=d565f24c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/FooterVagas.vue?vue&type=template&id=d565f24c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterVagas_vue_vue_type_template_id_d565f24c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterVagas_vue_vue_type_template_id_d565f24c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -64283,6 +64475,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(_inertiajs_inertia_vue__WEBPACK_I
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(laravel_jetstream__WEBPACK_IMPORTED_MODULE_2__["InertiaForm"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(portal_vue__WEBPACK_IMPORTED_MODULE_3___default.a);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('header-vagas', __webpack_require__(/*! ./Pages/HeaderVagas.vue */ "./resources/js/Pages/HeaderVagas.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('footer-vagas', __webpack_require__(/*! ./Pages/FooterVagas.vue */ "./resources/js/Pages/FooterVagas.vue")["default"]);
 var app = document.getElementById('app');
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   render: function render(h) {

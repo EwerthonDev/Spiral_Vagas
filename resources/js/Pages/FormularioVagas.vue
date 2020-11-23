@@ -10,7 +10,7 @@
       <div class="bg-gray-800 pt-6">
           <div class="container mx-auto p-4" style="max-width: 1000px;">
             <span class="text-gray-100"><b class="text-red-600">* </b>Campos obrigatórios</span>
-            <form class=" mt-8" action="/vagas/store" method="POST">
+            <form class=" mt-8" action="api/vagas/store" method="POST">
 
                 <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Nome da Vaga</label>
                 <input class="bg-gray-300 rounded w-full p-3" type="text" name="nome_vaga" />
@@ -19,7 +19,7 @@
                     <div class="col-span-1">
                         <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>País</label><br>
                         <select class="bg-gray-300 w-full rounded p-3" name="pais">
-                            <options></options>
+                            <option></option>
                         </select>
                     </div>
                     <div class="col-span-1">
@@ -33,17 +33,18 @@
                     <div class="col-span-1 mb-3">
                         <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Departamento</label><br>
                         <select class="bg-gray-300 w-full rounded p-3" name="departamento">
-                            <options></options>
+                            <option></option>
                         </select>
                     </div>
                 </div>    
 
                 <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Tipo do emprego</label><br>
                 <select class="bg-gray-300 w-full rounded p-3 mb-3" name="tipo_emprego">
-                    <options></options>
+                    <option></option>
                 </select>
                     <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Descrição da vaga</label><br>
-                    <textarea class="bg-gray-300 w-full rounded p-1" style="min-height:150px;"/>
+                    <div id="summernote"></div>
+                    <!-- <textarea class="bg-gray-300 w-full rounded p-1" name="summernote" id="summernote" style="min-height:150px;"/> -->
                 <div class="flex flex-row-reverse items-center mt-7">
                     <button type="submit" class="rounded-3xl p-3 shadow-xl bg-green-500 text-xl font-bold">Cadastrar</button>
                     <a class="text-gray-300 font-bold text-xl mr-6" href="/vagas">Cancelar</a>
@@ -71,11 +72,25 @@ export default {
         }
     },
     mounted() {
-        
+        $('#summernote').summernote({
+            tabsize: 2,
+            height: 120,
+            minHeight: 120,
+            toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+            ],
+        });
     },
-}
+} 
 </script>
 
 <style>
-
+    .note-editable { background-color:whitesmoke !important; }
+    .note-statusbar { background-color:whitesmoke !important; }
 </style>

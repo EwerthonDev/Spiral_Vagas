@@ -45,7 +45,15 @@
                     </select>
 
                     <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Descrição da vaga</label><br>
-                    <textarea class="bg-gray-300 w-full rounded p-1" style="min-height:150px;" v-model="campo.descricao"/>
+                    
+                    <quill-editor
+                        ref="myQuillEditor"
+                        v-model="campo.descricao"
+                        :options="editorOption"
+                        @blur="onEditorBlur($event)"
+                        @focus="onEditorFocus($event)"
+                        @ready="onEditorReady($event)"
+                    />
                 </div>
                 <div class="flex flex-row-reverse items-center mt-7">
                     <button type="submit" class="rounded-3xl p-3 shadow-xl bg-green-500 text-xl font-bold">Cadastrar</button>
@@ -63,14 +71,29 @@
 import Vue from 'vue'
 import HeaderVagas from './HeaderVagas'
 import FooterVagas from './FooterVagas'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+import Quill from 'quill'
+
+import { quillEditor } from 'vue-quill-editor'
 
 export default {
     components: {
+        quillEditor,
         'header-vagas': HeaderVagas,
         'footer-vagas': FooterVagas
     },
     data() {
         return {
+            content: '',
+            editorOption: {
+                placeholder: 'Detalhes da vaga',
+                theme: 'snow',
+                modules: {
+                toolbar: true
+        }
+            },
             usuarioLogado: [],
             campo: {
                 nome_vaga: null,
@@ -91,14 +114,37 @@ export default {
             });
             
             await window.location.replace('/vagas');
+        },
+        onEditorBlur(quill)
+        {
+        console.log('editor blur!', quill)
+        },
+        onEditorFocus(quill)
+        {
+            console.log('editor focus!', quill)
+        },
+        onEditorReady(quill)
+        {
+            console.log('editor ready!', quill)
+        },
+        onEditorChange({ quill, html, text }) 
+        {
+            console.log('editor change!', quill, html, text)
+            this.content = html
         }
     },
+    computed: {
+      editor() {
+        return this.$refs.myQuillEditor.quill
+      }
+    },
     mounted() {
-       
+       console.log('this is current quill instance object', this.editor)
     },
 } 
 </script>
 
 <style>
-    
+    .ql-editor {background-color: rgb(235, 235, 235); min-height: 150px; border-radius: 0 0 7px 7px;}
+    .ql-toolbar {background-color: rgb(235, 235, 235); border-radius: 7px 7px 0 0;}
 </style>

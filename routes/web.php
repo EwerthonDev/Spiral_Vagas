@@ -21,5 +21,5 @@ Route::get('/', function () {
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
     Route::get('/vagas', [PageController::class, 'vagas'])->name('vagas');
-    Route::get('/vagas/store', [PageController::class, 'formularioVagas'])->name('formularioVagas');
+    Route::get('/vagas/cadastrar', [PageController::class, 'formularioVagas'])->name('formularioVagas');
 });

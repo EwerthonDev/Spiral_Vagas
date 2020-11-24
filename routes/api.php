@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\UsuarioController;
+use App\Http\Controllers\Api\VagaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::get('/usuario', [UsuarioController::class, 'index']);
-    Route::post('/vagas/store', [UsuarioController::class, 'store']);
+    Route::post('/vagas/store', [VagaController::class, 'store']);
 });

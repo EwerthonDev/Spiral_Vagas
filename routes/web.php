@@ -22,4 +22,5 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
     Route::get('/vagas', [PageController::class, 'vagas'])->name('vagas');
     Route::get('/vagas/cadastrar', [PageController::class, 'formularioVagas'])->name('formularioVagas');
+    Route::get('/vagas/editar/{vagaId}', [PageController::class, 'editarVaga'])->name('editarVaga');
 });

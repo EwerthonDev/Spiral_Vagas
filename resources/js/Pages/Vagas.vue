@@ -13,7 +13,7 @@
                 </p>
             </div>
         </div>
-        <div class="bg-gray-700">
+        <div class="bg-gray-700" style="min-height:522px;">
             <div class="container mx-auto p-4">
                 <div class="flex justify-between items-center">
                     <h3 class="text-gray-200 text-2xl">Vagas de emprego</h3>
@@ -36,81 +36,21 @@
                     </select>
                 </div>
                 
-                <div class="bg-gray-800 shadow-2xl p-3 rounded mb-4">
+                <div v-for="vaga in vagas" :key="vaga.id" class="bg-gray-800 shadow-2xl p-3 rounded mb-4 cursor-pointer" v-on:click="mostrarVaga(vaga.id)">
                     <div class="flex justify-between items-center mb-2">
                         <span class="text-gray-100 mt-3">Publicado há 2 dias</span>
-                        <button @click="estaAberto = !estaAberto" class="text-gray-100 font-bold text-3xl">...</button>
-                    </div>
-
-                    <div v-if="estaAberto" class="float-right mt-1 w-25 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Editar</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 hover:text-red-900" role="menuitem">Excluir</a>
+                        <div class="flex justify-between items-center cursor-default">
+                            <button v-on:click="editarVaga(vaga.id)" class="mr-2 cursor-default"><i class="hover:text-green-500 cursor-default text-gray-200 far fa-edit"></i></button>
+                            <button v-on:click="deletarVaga(vaga.id)" class="cursor-default"><i class="cursor-default hover:text-green-500 text-red-600 fas fa-trash-alt"></i></button>
                         </div>
                     </div>
 
-                    <h2 class="text-xl text-green-500 font-bold">Desenvolvedor PHP Júnior</h2>
+                    <h2 class="text-xl text-green-500 font-bold">{{vaga.nome_vaga}}</h2>
                     <div class="mt-5 flex">
-                        <span class="text-gray-100"> Tecnologia  |  São Paulo, SP, Brasil  |  Período Integral  |  Remoto </span>
+                        <span class="text-gray-100"> {{vaga.departamento}}  |  {{vaga.cidade}}, {{vaga.estado}}, {{vaga.pais}}  |  {{vaga.tipo_emprego}} </span>
                     </div>
                 </div>
 
-                <div class="bg-gray-800 shadow-2xl p-3 rounded mb-4">
-                    <div class="flex justify-between items-center mb-2">
-                        <span class="text-gray-100 mt-3">Publicado há 2 dias</span>
-                        <button @click="estaAberto = !estaAberto" class="text-gray-100 font-bold text-3xl">...</button>
-                    </div>
-
-                    <div v-if="estaAberto" class="float-right mt-1 w-25 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Editar</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 hover:text-red-900" role="menuitem">Excluir</a>
-                        </div>
-                    </div>
-
-                    <h2 class="text-xl text-green-500 font-bold">Desenvolvedor PHP Júnior</h2>
-                    <div class="mt-5 flex">
-                        <span class="text-gray-100"> Tecnologia  |  São Paulo, SP, Brasil  |  Período Integral  |  Remoto </span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 shadow-2xl p-3 rounded mb-4">
-                    <div class="flex justify-between items-center mb-2">
-                        <span class="text-gray-100 mt-3">Publicado há 2 dias</span>
-                        <button @click="estaAberto = !estaAberto" class="text-gray-100 font-bold text-3xl">...</button>
-                    </div>
-
-                    <div v-if="estaAberto" class="float-right mt-1 w-25 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Editar</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 hover:text-red-900" role="menuitem">Excluir</a>
-                        </div>
-                    </div>
-
-                    <h2 class="text-xl text-green-500 font-bold">Desenvolvedor PHP Júnior</h2>
-                    <div class="mt-5 flex">
-                        <span class="text-gray-100"> Tecnologia  |  São Paulo, SP, Brasil  |  Período Integral  |  Remoto </span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-800 shadow-2xl p-3 rounded mb-4">
-                    <div class="flex justify-between items-center mb-2">
-                        <span class="text-gray-100 mt-3">Publicado há 2 dias</span>
-                        <button @click="estaAberto = !estaAberto" class="text-gray-100 font-bold text-3xl">...</button>
-                    </div>
-
-                    <div v-if="estaAberto" class="float-right mt-1 w-25 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Editar</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 hover:text-red-900" role="menuitem">Excluir</a>
-                        </div>
-                    </div>
-
-                    <h2 class="text-xl text-green-500 font-bold">Desenvolvedor PHP Júnior</h2>
-                    <div class="mt-5 flex">
-                        <span class="text-gray-100"> Tecnologia  |  São Paulo, SP, Brasil  |  Período Integral  |  Remoto </span>
-                    </div>
-                </div>
             </div>
         </div>
         <footer-vagas></footer-vagas>
@@ -128,12 +68,35 @@ export default {
     },
     data() {
         return {
+            vagas: [],
             estaAberto: false,
             usuarioLogado: []
         }
     },
+    methods: {
+        editarVaga: function(vagaId)
+        {   
+            axios.get(`/vagas/editar/${vagaId}`).then(response => {
+                window.location.replace(`/vagas/editar/${vagaId}`);
+            });
+        },
+        deletarVaga: function(vagaId)
+        {   
+            axios.get(`/vagas/deletar/${vagaId}`).then(response => {
+                window.location.replace(`/vagas/deletar/${vagaId}`);
+            });
+        },
+        mostrarVaga: function(vagaId)
+        {   
+            axios.get(`/vagas/mostrar/${vagaId}`).then(response => {
+                window.location.replace(`/vagas/mostrar/${vagaId}`);
+            });
+        }
+    },
     mounted() {
-        
+        axios.get('/api/vagas/resgatarVagas').then(response => {
+            this.vagas = response.data.vagas
+        });
     },
 }
 </script>

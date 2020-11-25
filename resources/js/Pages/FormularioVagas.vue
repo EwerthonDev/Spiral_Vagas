@@ -20,7 +20,7 @@
                         <div class="col-span-1">
                             <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>País</label><br>
                             <select class="bg-gray-300 w-full rounded p-3" name="pais" v-model="campo.pais">
-                                <option value="brasil">Brasil</option>
+                                <option value="Brasil">Brasil</option>
                             </select>
                         </div>
                         <div class="col-span-1">
@@ -34,7 +34,8 @@
                         <div class="col-span-1 mb-3">
                             <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Departamento</label><br>
                             <select class="bg-gray-300 w-full rounded p-3" name="departamento" v-model="campo.departamento">
-                                <option value="desenvolvimento">Desenvolvimento</option>
+                                <option>Tecnologia</option>
+                                <option>Gestão</option>
                             </select>
                         </div>
                     </div>
@@ -42,6 +43,10 @@
                     <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Tipo do emprego</label><br>
                     <select class="bg-gray-300 w-full rounded p-3 mb-3" name="tipo_emprego" v-model="campo.tipo_emprego">
                         <option>CLT</option>
+                        <option>Período Integral</option>
+                        <option>PJ</option>
+                        <option>MEI</option>
+                        <option>Autônomo</option>
                     </select>
 
                     <label class="text-gray-100 font-bold text-xl"><b class="text-red-600">* </b>Descrição da vaga</label><br>

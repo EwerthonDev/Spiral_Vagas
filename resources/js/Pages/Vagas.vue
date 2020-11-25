@@ -62,6 +62,7 @@ import Vue from 'vue'
 import HeaderVagas from './HeaderVagas'
 import FooterVagas from './FooterVagas'
 export default {
+    
     components: {
         'header-vagas': HeaderVagas,
         'footer-vagas': FooterVagas,
